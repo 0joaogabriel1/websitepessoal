@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <title>Contatos</title>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#home" class="logo">João <span>Gabriel</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="projetos.html">Projetos</a>
+            <a href="novidades.html">Novidades</a>
+            <a href="contato.html" class="active">Contato</a>
+        </nav>
+
+    </header>
+
+    <div class="profile-container">
+        <img src="imagens/eu01.png" alt="" class="profile-picture">
+    </div>
+
+    <section class="contato-pagina">
+        <div class="title">
+            <h3>João | 18 anos | Brasil</h3>
+            <p><i>Desenvolvedor</i></p> <br>
+        </div>
+        <div class="social">
+            <p><strong>Me encontre aqui:</strong></p>
+        </div>
+
+        <div class="social-media">
+            <div class="button">
+
+                <a href=""><i class='bx bxl-instagram' id="instagram"></i>
+                    | Instagram
+                </a>
+            </div>
+
+            <div class="button">
+                <a href="#"><i class='bx bxl-github' id="github"></i> | Github</a>
+            </div>
+
+            <div class="button">
+                <a href="#"><i class='bx bxl-linkedin' id="linkedin"></i> | Linkedin</a>
+
+                </a>
+            </div>
+
+            <div class="button">
+                <a href="#"><i class='bx bxl-instagram' id="whatsapp"></i> | Whatsapp
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contato" id="contato">
+        <h2 class="heading">Me envie um e-mail</h2>
+        
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Seu Nome">
+                    <input type="email" placeholder="seu@email.com">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Seu numero">
+                    <input type="text" placeholder="Assunto">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Escreva aqui..."></textarea>
+                <input type="submit" value="Enviar" class="btn">
+            </div>
+
+        </form>
+
+        <div id="errorMessage" class="popup">
+            ❌ Por favor, preencha todos os campos obrigatórios!
+        </div>
+
+        <div id="confirmationMessage" class="popup">
+            ✅ Mensagem Enviada com Sucesso!
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

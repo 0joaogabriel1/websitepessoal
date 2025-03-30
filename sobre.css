@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #665030;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #69b6f5;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.logo {
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 25px var(--main-color);
+}
+
+.navbar a {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    width: 100%;
+    padding: 20rem 0;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre {
+    flex: 1;
+    max-width: 60rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.conteudo-sobre h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.conteudo-sobre p {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.conteudo-sobre img {
+    max-width: 74%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.btn-curriculo {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    color: white;
+    background: none;
+    border-radius: 4rem;
+    transition: 0.3s ease ease-in-out;
+    margin-right: 1rem;
+    border: 8px solid transparent;
+    cursor: pointer;
+    border: solid 2px #4a94d3;
+}
+
+.btn-curriculo:hover {
+    background-color: #4a94d3;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px var(--main-color);
+}
